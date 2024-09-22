@@ -26,36 +26,174 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <title>Donation_Assignment</title>
   </head>
   <body class="font-lexend">
-    <header class="bg-[#F9F7F3] py-6">
-      <nav class="w-10/12 mx-auto">
-        <div class="flex flex-col space-y-3 md:flex-row md:justify-between items-center">
-          <div>
-            <button class="btn btn-green font-semibold text-xl">Blog</button>
+    <header>
+      <section class="bg-[#F9F7F3] py-6">
+        <nav class="w-10/12 mx-auto">
+          <div
+            class="flex flex-col space-y-3 md:flex-row md:justify-between items-center"
+          >
+            <div>
+              <button class="btn btn-green font-semibold text-xl">Blog</button>
+            </div>
+            <div class="flex items-center gap-3">
+              <img src="./assets/logo.png" alt="" />
+              <p class="font-semibold text-xl">Donate Bangladesh</p>
+            </div>
+            <div class="flex items-center gap-3 text-xl">
+              <img src="./assets/coin.png" alt="" />
+              <p class="text-[#111111B3] font-medium"><span>5500</span> BDT</p>
+            </div>
           </div>
-          <div class="flex items-center  gap-3">
-            <img src="./assets/logo.png" alt="" />
-            <p class="font-semibold text-xl">Donate Bangladesh</p>
-          </div>
-          <div class="flex items-center gap-3 text-xl">
-            <img src="./assets/coin.png" alt="" />
-            <p class="text-[#111111B3] font-medium"><span>5500</span> BDT</p>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </section>
+      <!-- Donation and History button -->
+
+      <div class="mt-20 flex justify-center gap-4">
+        <button class="btn btn-green font-semibold text-xl">Donation</button>
+        <button disabled class="btn btn-green font-semibold text-xl">
+          History
+        </button>
+      </div>
     </header>
     <main>
-        <!-- Donation and History button -->
+      <!-- Donation Card Section Starts-->
+      <section class="mt-8 mb-20 w-10/12 mx-auto space-y-8">
+        <!-- card-1 -->
+        <div>
+          <div
+            class="card lg:card-side bg-base-100 p-8 border border-1-[rgba(17, 17, 17, 0.1)] flex gap-10 h-full"
+          >
+            <div class="flex-1">
+              <img
+                class="h-full w-full object-fill rounded-xl"
+                src="./assets/noakhali.png"
+                alt="Album"
+              />
+            </div>
+            <!-- Card-content -->
+            <div class="flex-1 space-y-7">
+              <div
+                class="p-4 bg-[#1111110D] flex items-center gap-2 rounded-2xl w-32"
+              >
+                <img src="./assets/coin.png" alt="" />
+                <p class="text-[#111111B3] text-base"><span>0</span> BDT</p>
+              </div>
+              <h2 class="card-title font-bold">
+                Donate for Flood at Noakhali, Bangladesh
+              </h2>
+              <p class="font-light text-[#111111B3]">
+                The recent floods in Noakhali have caused significant damage to
+                homes infrastructure. Your donation will help provide essential
+                supplies and to those affected by this disaster. Every
+                contribution, big or small, makes difference. Please join us in
+                supporting the relief efforts and making a positive impact on
+                the lives of those in need.
+              </p>
 
-        <div class="mt-20 flex justify-center gap-4">
-            <button class="btn btn-green font-semibold text-xl">Donation</button>
-            <button disabled class="btn btn-green font-semibold text-xl ">History</button>
+              <input
+                class="p-5 border border-1 rounded-xl w-full"
+                type="text"
+                placeholder="Write Donation Amount"
+              />
 
+              <div>
+                <button class="my-3 btn w-full btn-green font-semibold text-xl">
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- card-2 -->
+        <div>
+          <div
+            class="card lg:card-side bg-base-100 p-8 border border-1-[rgba(17, 17, 17, 0.1)] flex gap-10 h-full"
+          >
+            <div class="flex-1">
+              <img
+                class="h-full w-full object-fill rounded-xl"
+                src="./assets/feni.png"
+                alt="Album"
+              />
+            </div>
+            <!-- Card-content -->
+            <div class="flex-1 space-y-7">
+              <div
+                class="p-4 bg-[#1111110D] flex items-center gap-2 rounded-2xl w-32"
+              >
+                <img src="./assets/coin.png" alt="" />
+                <p class="text-[#111111B3] text-base"><span>0</span> BDT</p>
+              </div>
+              <h2 class="card-title font-bold">
+                Donate for Flood Relief in Feni,Bangladesh
+              </h2>
+              <p class="font-light text-[#111111B3]">
+                The recent floods in Feni have devastated local communities, leading to severe disruption and loss. Your generous donation will help provide immediate aid, including food, clean water, and medical supplies, to those affected by this calamity. Together, we can offer crucial support and help rebuild lives in the aftermath of this disaster. Every contribution counts towards making a real difference. Please consider donating today to assist those in urgent need.
+              </p>
+
+              <input
+                class="p-5 border border-1 rounded-xl w-full"
+                type="text"
+                placeholder="Write Donation Amount"
+              />
+
+              <div>
+                <button class="my-3 btn w-full btn-green font-semibold text-xl">
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- card-3 -->
+        <div>
+          <div
+            class="card lg:card-side bg-base-100 p-8 border border-1-[rgba(17, 17, 17, 0.1)] flex gap-10 h-full"
+          >
+            <div class="flex-1">
+              <img
+                class="h-full w-full object-fill rounded-xl"
+                src="./assets/quota-protest.png"
+                alt="Album"
+              />
+            </div>
+            <!-- Card-content -->
+            <div class="flex-1 space-y-7">
+              <div
+                class="p-4 bg-[#1111110D] flex items-center gap-2 rounded-2xl w-32"
+              >
+                <img src="./assets/coin.png" alt="" />
+                <p class="text-[#111111B3] text-base"><span>0</span> BDT</p>
+              </div>
+              <h2 class="card-title font-bold">
+                Aid for Injured in the Quota Movement
+              </h2>
+              <p class="font-light text-[#111111B3]">
+                The recent Quota movement has resulted in numerous injuries and significant hardship for many individuals. Your support is crucial in providing medical assistance, rehabilitation, and necessary supplies to those affected. By contributing, you help ensure that injured individuals receive the care and support they need during this challenging time. Every donation plays a vital role in alleviating their suffering and aiding in their recovery. Please consider making a donation to support these brave individuals in their time of need.
+              </p>
+
+              <input
+                class="p-5 border border-1 rounded-xl w-full"
+                type="text"
+                placeholder="Write Donation Amount"
+              />
+
+              <div>
+                <button class="my-3 btn w-full btn-green font-semibold text-xl">
+                  Donate Now
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Donation Card Section ends-->
     </main>
   </body>
 </html>
