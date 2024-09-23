@@ -38,7 +38,7 @@
             class="flex flex-col space-y-3 md:flex-row md:justify-between items-center"
           >
             <div>
-              <button class="btn btn-green font-semibold text-xl">Blog</button>
+              <button id="btn-blog" class="btn btn-green font-semibold text-xl">Blog</button>
             </div>
             <div class="flex items-center gap-3">
               <img src="./assets/logo.png" alt="" />
@@ -55,14 +55,14 @@
 
       <div class="mt-20 flex justify-center gap-4 ">
         <button class="btn btn-green font-semibold text-xl">Donation</button>
-        <button disabled class="btn btn-green font-semibold text-xl">
+        <button class="btn btn-outline font-semibold text-xl">
           History
         </button>
       </div>
     </header>
     <main>
       <!-- Donation Card Section Starts-->
-      <section class="mt-8 mb-20 w-10/12 mx-auto space-y-8">
+      <section id="donation-card" class="mt-8 mb-20 w-10/12 mx-auto space-y-8">
         <!-- card-1 -->
         <div>
           <div
@@ -195,5 +195,7 @@
 
       <!-- Donation Card Section ends-->
     </main>
+
+    <script src="./blog.js"></script>
   </body>
 </html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- GoogleFont -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap"
+        rel="stylesheet"
+      />
+      <style>
+        .font-lexend {
+          font-family: "Lexend", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 400;
+          font-style: normal;
+        }
+      </style>
+  
+      <!-- DaisiUi -->
+      <link
+        href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+        rel="stylesheet"
+        type="text/css"
+      />
+      <script src="https://cdn.tailwindcss.com"></script>
+      <link rel="stylesheet" href="style.css" />
+    <title>Blog</title>
+</head>
+<body>
+    <section>
+        <header class="sticky top-0 z-10  bg-zinc-50">
+            <section class="bg-[#F9F7F3] py-6">
+              <nav class="w-10/12 mx-auto">
+                <div
+                  class="flex flex-col space-y-3 md:flex-row md:justify-between items-center"
+                >
+                  <div>
+                    <button id="btn-blog" class="btn btn-green font-semibold text-xl">Blog</button>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <img src="./assets/logo.png" alt="" />
+                    <p class="font-semibold text-xl">Donate Bangladesh</p>
+                  </div>
+                  <div class="flex items-center gap-3 text-xl">
+                    <img src="./assets/coin.png" alt="" />
+                    <p class="text-[#111111B3] font-medium"><span>5500</span> BDT</p>
+                  </div>
+                </div>
+              </nav>
+            </section>
+            <!-- Donation and History button -->
+      
+            <div class="mt-20 flex justify-center gap-4 ">
+              <button class="btn btn-green font-semibold text-xl">Donation</button>
+              <button disabled class="btn btn-green font-semibold text-xl">
+                History
+              </button>
+            </div>
+          </header>
+
+
+        <!-- Accordian -->
+      <div class="mt-8 w-10/12 mx-auto">
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why is it useful?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>hello</p>
+            </div>
+          </div>
+      </div>
+    </section>
+</body>
+</html>
