@@ -47,5 +47,8 @@ cardBalanceEl.innerText = currentCardBalance.toFixed(2)
 // Clear the input field
 document.getElementById(inputFieldId).value = '';
 
+// Modal
+document.getElementById('my_modal_1').showModal()
+
 }
 
