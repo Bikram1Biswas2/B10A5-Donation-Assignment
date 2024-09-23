@@ -58,8 +58,8 @@
       <!-- Donation and History button -->
 
       <div class="mt-20 flex justify-center gap-4">
-        <button class="btn btn-green font-semibold text-xl">Donation</button>
-        <button class="btn btn-outline font-semibold text-xl">History</button>
+        <button id="donation-btn" class="btn btn-green font-semibold text-xl">Donation</button>
+        <button id="history-btn" class="btn btn-outline font-semibold text-xl">History</button>
       </div>
     </header>
     <main>
@@ -108,7 +108,7 @@
 
               <div>
                 <button
-                  onclick="handleDonate('noakhali-input-field', 'noakhali-balance')"
+                  onclick="handleDonate('noakhali-input-field', 'noakhali-balance','flood-at-Noakhali,Bangladesh')"
                   class="my-3 btn w-full btn-green font-semibold text-xl"
                 >
                   Donate Now
@@ -162,7 +162,7 @@
 
               <div>
                 <button
-                  onclick="handleDonate('feni-input-field', 'feni-balance')"
+                  onclick="handleDonate('feni-input-field', 'feni-balance','flood at Feni,Bangladesh')"
                   class="my-3 btn w-full btn-green font-semibold text-xl"
                 >
                   Donate Now
@@ -217,7 +217,7 @@
 
               <div>
                 <button
-                  onclick="handleDonate('quota-input-field', 'quota-movement-balance')"
+                  onclick="handleDonate('quota-input-field', 'quota-movement-balance','Aid for Injured in the Quota Movement')"
                   class="my-3 btn w-full btn-green font-semibold text-xl"
                 >
                   Donate Now
@@ -251,7 +251,14 @@
 
       <!-- history section starts -->
 
-      <section class=""></section>
+      <section id="history-container" class="w-10/12 mx-auto hidden">
+<h2 class="text-3xl font-semibold text-center mt-3">Donation History</h2>
+
+<div id="history-list" class=" mt-4 space-y-3 text-center">
+
+
+</div>
+      </section>
 
       <!-- history section ends -->
     </main>
